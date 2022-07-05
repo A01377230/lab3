@@ -12,7 +12,149 @@
 	<link rel="stylesheet" href="./index.css" />
 </head>
 
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar{
+  display: flex;
+  background-color: rgb(82, 82, 82);
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.navbar .hamburger{
+  display: flex;
+  color: white;
+  }
+.navbar .menu{
+  display: flex;
+  
+}
+.navbar .menu li{
+  display: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product{
+  display: flex;
+  border: solid;
+  border-width: 1px;
+  flex-direction: column;
+  align-items: center;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 10px;
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+  header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5cm;
+  }
+  main{
+    align-items: center;
+    flex-direction: column;
+  }
+  .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(224, 224, 224);
+    padding: 10px; 
+  }
+  .navbar{
+    align-items: center;
+  }
+  .navbar .hamburger{
+    display:inline;
+    color: white;
+  }
+  .navbar .menu{
+    display: none;
+  }
+  .social{
+    border-top: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+  }
+}
+@media (min-width:1025px) and (max-width:1300px){
+  header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5cm;
+  }
+  .navbar .hamburger{
+    display: none;
+  }
+  .navbar .menu{
+    display: flex;
+    color: white;
+    
+    
+  }
+  .navbar .menu li{
+    display: flex;
+    padding-right:20px;
+  }
+  main{
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 40px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(224, 224, 224);  
+    height:min-content;  
+  }
+  .social{
+    border-top: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+  }
+}
 
 <body>
   <header>
